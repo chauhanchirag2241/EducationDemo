@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+.main {
+    font-family: "Merienda", cursive;
+}
+
+.right{
+    display: flex;
+    gap: 2rem;
+}
+
+.right button{
+    padding: 5px 20px;
+    font-weight: 600;  
+    height: 35px;
+    border-radius: 5px;
+    background-color: #F44336;
+    color: white;
+    border: none;
+}
+
+
+.right button:hover{
+    cursor: pointer;
+   
+}
+nav {
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem ;
+    padding-left: 3rem;
+    padding-right: 1.5rem;
+    height: 50px;
+    border-bottom: 2px solid rgb(66, 62, 62);
+}
+
+ul{
+    display: flex;
+    gap: 4rem;
+    list-style: none;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+ li:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    line-height: 1rem;
+    text-shadow:2px 2px #F44336;
+ }
+
+.content{
+    display: flex;
+}
+
+.about{
+    /* background-color:violet; */
+    width: 55%;
+    /* height: 100%; */
+    padding: 3rem;
+    
+}
+
+.image{
+   background-image: url("./6463428.jpg");  
+    width: 45%;
+    height: 100%;
+background-repeat: no-repeat;
+}
+
+.image img{
+ height: 100%;
+ width: 100%;
+}
+
+.about h1{
+    font-size:3.5rem;
+   
+}
+
+.text{
+    font-size: 1.5rem;
+    margin-top: 2rem;
+}
+
+.content button{
+    padding: 0.7rem 1.3rem;
+    font-weight: 800;
+    margin-top: 2rem;
+    background-color: #F44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.content button:hover , .right button:hover{
+    box-shadow: 2px 2px #1f1d1d;
+}
+.about span{
+   color:  #F44336 ;
+   text-shadow: 5px 4px #000000;
+}
+
+.left img{
+    width: 6rem;
+    height: 2.5rem;
+    
+}
+
+.right img{
+  margin-bottom: 0.8rem;
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .right ul{
+       display: none; 
+    }
+
+    .right img{
+        /* margin-bottom: 0.8rem; */
+        display: block;
+      }
+
+      .content{
+        flex-wrap: wrap;
+      }
+
+      .about{
+        width: 100%;
+      }
+      .image{
+        width: 100%;
+      }
+
+  }
